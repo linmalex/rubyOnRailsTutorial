@@ -88,4 +88,9 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+  
+  group :production do
+  gem 'pg', '0.20.0'
+end
+
 end
